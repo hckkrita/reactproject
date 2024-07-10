@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import {useState} from 'react'
 import './App.css';
+import TimerComponent from './timer';
+import ToggleParentComponent from './toggleParentComponent';
+import CounterParentComponent from './counterParentComponent';
+import MessageParentComponet from './messageParentComponent';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNavbar = () => {
+        setIsOpen(!isOpen);
+    };
+  return(
+    <>
+      <nav className="navbar">
+            <div className="navbar-logo">
+                YX.CO
+            </div>
+            <button className="navbar-toggle" onClick={toggleNavbar}>
+                ☰
+            </button>
+            <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <TimerComponent/>
+
+        <ToggleParentComponent/>
+        <CounterParentComponent/>
+        <MessageParentComponet/>
+    </>
   );
 }
 

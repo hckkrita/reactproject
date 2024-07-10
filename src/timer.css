@@ -1,0 +1,98 @@
+.container{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+button{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.togglecontainer{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.childButton{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 80px;
+}
+
+
+
+.counterContainer{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.counterButton1{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 60px;
+    display: flex;
+}
+
+.counterButton2{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 60px;
+    
+}
+.messageContainer{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.childButton1{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+}
